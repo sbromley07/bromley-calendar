@@ -1,0 +1,16 @@
+.col {
+    padding: 0;
+}
+
+.fixed-display-width {
+    min-width: 12rem;
+    display: inline-block;
+}
+
+.header-btn {
+    margin-top: .5rem;
+}
+
+.container {
+    margin-top: 5rem;
+}
