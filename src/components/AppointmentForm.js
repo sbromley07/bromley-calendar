@@ -70,7 +70,7 @@ class AppointmentForm extends Component {
               <label htmlFor='date'>Date</label>
               <input type='date' className='form-control' name='date' value={this.state.date} onChange={e => this.handleChange('date', e)} />
             </div>
-            <button className='btn btn-success' onClick={this.onSubmit} >{this.props.isEdit ? 'Update' : 'Create'}</button>
+            <button className='btn btn-success' onClick={this.onSubmit} disabled={this.state.title === '' || this.state.date === ''} >{this.props.isEdit ? 'Update' : 'Create'}</button>
             {this.props.isEdit &&
               <button
                 className='btn btn-danger btn-left-margin'
